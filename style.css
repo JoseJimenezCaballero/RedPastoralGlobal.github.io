@@ -1,0 +1,113 @@
+body {
+  position: relative;
+  background-image: url("https://img.freepik.com/free-vector/blurred-bokeh-pattern-wallpaper-soft-touch-your-walls_1017-43483.jpg");
+  background-size: cover;
+}
+
+.headerr{
+  background-image:
+    url("/assets/IMG_6271.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  width: 100%;
+  padding: 15%;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  border-radius: 50px;
+}
+
+.mobile_header {
+  background-image:
+    url("/assets/IMG_6271.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 32%;
+  background-size: 75%;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 90px;
+  border-radius: 50px;
+}
+
+.card {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-footer .price {
+  position: absolute;
+  right: 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+#properties,#testimonials,#mision,#donation {
+  background-color: rgba(110,110,0,0.1);
+  border-radius: 90px;
+  margin-bottom: 50px;
+}
+
+#properties-target,#testimonials-target,#about-us-target,#mision-target,#meta-target,#unirse-target,#donation-target {
+  position: relative;
+  top: -100px;
+}
+
+.navbar {
+  transition-duration: .5s !important;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: transparent !important;
+}
+
+.carousel-inner {
+  border-radius: 50px;
+}
+
+.carousel-item:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.carousel-caption {
+  z-index: 1;
+  font-size: 13px;
+}
+
+@media (min-width: 800px) {
+    .container{
+        max-width: 1800px;
+    }
+}
+
+.input_normal{
+  width: 25%;
+}
+
+.input_mobile{
+  width: 75%;
+}
