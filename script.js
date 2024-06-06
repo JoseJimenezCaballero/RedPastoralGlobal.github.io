@@ -12,6 +12,11 @@ function adjust_carousel() {
   var carousel2 = document.getElementById("carouselExampleCaptions2");
   var carousel3 = document.getElementById("carouselExampleCaptions3");
   var carousel4 = document.getElementById("carouselExampleCaptions4");
+  var vision = document.querySelector('.vision_pc');
+  var vision_q = document.querySelector('.vision_pcq');
+  var mision_ul = document.getElementById("mision_ul")
+  var mision_header = document.querySelectorAll(".list_style")
+  var identidad_pc = document.querySelector('.identidad_pc');
 
   //selects all tags whose id is we1
   var elements = document.querySelectorAll('[id="we1"]');/*   bad i know :/   */
@@ -29,6 +34,19 @@ function adjust_carousel() {
 
     elementsgg.forEach(function(element) {
       element.classList.remove("mt-5"); // set the widht of the element to 50% of the viewport height
+    });
+
+    identidad_pc.classList.remove("identidad_pc");
+    identidad_pc.style.paddingTop = "40px";
+
+    vision.classList.remove("vision_pc");
+    vision_q.classList.remove("vision_pcq");
+
+    mision_ul.style.paddingLeft = "55px";
+    mision_ul.style.paddingTop = "30px";
+    mision_header.forEach(function(element) {
+      element.classList.remove("list_style"); // set the widht of the element to 50% of the viewport height
+      element.classList.add("list_style_mobile");
     });
 
 

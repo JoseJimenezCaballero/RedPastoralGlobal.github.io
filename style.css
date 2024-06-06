@@ -137,3 +137,31 @@ section {
   width: 75%; /* Adjust the width as needed */
   margin: auto; /* Center the carousel horizontally */
 }
+
+.vision_pc{
+  padding-left: 140px !important; 
+  padding-right: 140px !important;
+}
+/*for the quote under vision text*/
+.vision_pcq{
+  padding-left: 350px !important; 
+  padding-right: 350px !important;
+}
+
+.list_style{
+  font-size: 26px; 
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+
+.list_style_mobile{
+  font-size: 23px; 
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+
+.identidad_pc{
+  padding-top: 20px;
+  padding-left: 140px !important; 
+  padding-right: 140px !important;
+}
