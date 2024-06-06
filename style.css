@@ -6,7 +6,7 @@ body {
 
 .headerr{
   background-image:
-    url("/assets/IMG_6271.png");
+    url("assets/IMG_6271.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 
 .mobile_header {
   background-image:
-    url("/assets/IMG_6271.png");
+    url("assets/IMG_6271.png");
   background-size: cover;
   background-position: center;
   width: 100%;
