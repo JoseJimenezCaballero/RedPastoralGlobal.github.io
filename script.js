@@ -5,24 +5,40 @@ window.onload = adjust_carousel();
 function adjust_carousel() {
 
   var T = document.getElementById("gg");
-  var w1 = document.getElementById("we1");
-  var w2 = document.getElementById("we2");
-  var w3 = document.getElementById("we3");
   var N = document.getElementById("home");
   var navv = document.getElementById("navy");
   const collection = document.getElementsByClassName("form-control input_normal");
+  var carousel = document.getElementById("carouselExampleCaptions");
+  var carousel2 = document.getElementById("carouselExampleCaptions2");
+  var carousel3 = document.getElementById("carouselExampleCaptions3");
+  var carousel4 = document.getElementById("carouselExampleCaptions4");
 
+  //selects all tags whose id is we1
+  var elements = document.querySelectorAll('[id="we1"]');/*   bad i know :/   */
+  var elementsgg = document.querySelectorAll('[id="gg"]');/*   bad i know :/ again  */
+
+  //for smaller screens do the following
   if (window.innerWidth <= 1000) {
     T.style.width = "100%";
     T.style.marginLeft = "0vw";
 
-    w1.style.height = "50vh";
-    w2.style.height = "50vh";
-    w3.style.height = "50vh";
+    // Iterate over the NodeList to perform actions on each element
+    elements.forEach(function(element) {
+      element.style.height = "50vh"; // set the widht of the element to 50% of the viewport height
+    });
+
+    elementsgg.forEach(function(element) {
+      element.classList.remove("mt-5"); // set the widht of the element to 50% of the viewport height
+    });
+
 
     N.classList.remove("headerr");
     N.classList.add("mobile_header");
 
+    carousel.classList.remove("custom-carousel");
+    carousel2.classList.remove("custom-carousel");
+    carousel3.classList.remove("custom-carousel");
+    carousel4.classList.remove("custom-carousel");
     navv.classList.remove("py-3")
 
     collection[0].classList.add("input_mobile");

@@ -6,7 +6,7 @@ body {
 
 .headerr{
   background-image:
-    url("assets/IMG_6271.png");
+    url("/assets/IMG_6271.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 
 .mobile_header {
   background-image:
-    url("assets/IMG_6271.png");
+    url("/assets/IMG_6271.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -83,8 +83,14 @@ section {
   background-color: transparent !important;
 }
 
+.carousel-item {
+  transition: transform 0.4s ease; /* Changes transition of images to faster time */
+}
+
 .carousel-inner {
   border-radius: 50px;
+  width: 100% !important;
+  max-height: 50% !important;
 }
 
 .carousel-item:after {
@@ -99,7 +105,17 @@ section {
 
 .carousel-caption {
   z-index: 1;
-  font-size: 13px;
+  font-size: 17px !important;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
 }
 
 @media (min-width: 800px) {
@@ -114,4 +130,10 @@ section {
 
 .input_mobile{
   width: 75%;
+}
+
+/*Used to resize the carousels width as needed. The height is adjusted in the image tag of the carousel*/
+.custom-carousel {
+  width: 75%; /* Adjust the width as needed */
+  margin: auto; /* Center the carousel horizontally */
 }
