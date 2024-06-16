@@ -17,6 +17,12 @@ function adjust_carousel() {
   var mision_ul = document.getElementById("mision_ul")
   var mision_header = document.querySelectorAll(".list_style")
   var identidad_pc = document.querySelector('.identidad_pc');
+  var licenciatura_pc = document.querySelector('.licenciatura_pc');
+  var misiones_quotes = document.querySelectorAll(".misiones_pc")
+  var headers = document.querySelectorAll(".header_text")
+  var vision_container = document.querySelector("#vision_container");
+  var licen_container = document.querySelector("#licen_container");
+  var body_text = document.querySelectorAll(".body_text");
 
   //selects all tags whose id is we1
   var elements = document.querySelectorAll('[id="we1"]');/*   bad i know :/   */
@@ -42,11 +48,23 @@ function adjust_carousel() {
     vision.classList.remove("vision_pc");
     vision_q.classList.remove("vision_pcq");
 
+    licenciatura_pc.classList.remove("licenciatura_pc");
+
     mision_ul.style.paddingLeft = "55px";
     mision_ul.style.paddingTop = "30px";
     mision_header.forEach(function(element) {
       element.classList.remove("list_style"); // set the widht of the element to 50% of the viewport height
       element.classList.add("list_style_mobile");
+    });
+
+    misiones_quotes.forEach(function(element) {
+      element.classList.remove("misiones_pc");
+      element.classList.add("misiones_mobile");
+    });
+
+    headers.forEach(function(element) {
+      element.classList.remove("header_text");
+      element.classList.add("header_text_mobile");
     });
 
 
@@ -64,6 +82,16 @@ function adjust_carousel() {
     collection[2].classList.add("input_mobile");
     collection[3].classList.add("input_mobile");
     collection[4].classList.add("input_mobile");
+
+    vision_container.classList.remove("mt-5","mb-5");
+    licen_container.classList.remove("mt-5", "mb-5");
+    licen_container.classList.add("mb-2");
+
+    body_text.forEach(function(element){
+      element.classList.remove("body_text");
+      element.classList.add("body_text_mobile");
+    });
+
   }
 
 }

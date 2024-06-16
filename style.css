@@ -75,6 +75,11 @@ section {
   transition-duration: .5s !important;
 }
 
+
+.carousel-item {
+  transition: transform 0.6s ease; /* Changes transition of images to faster time */
+}
+
 .carousel-item img {
   object-fit: cover;
   object-position: center;
@@ -83,9 +88,12 @@ section {
   background-color: transparent !important;
 }
 
-.carousel-item {
-  transition: transform 0.4s ease; /* Changes transition of images to faster time */
+/*Used to resize the carousels width as needed. The height is adjusted in the image tag of the carousel*/
+.custom-carousel {
+  width: 85%; /* Adjust the width as needed */
+  margin: auto; /* Center the carousel horizontally */
 }
+
 
 .carousel-inner {
   border-radius: 50px;
@@ -132,12 +140,6 @@ section {
   width: 75%;
 }
 
-/*Used to resize the carousels width as needed. The height is adjusted in the image tag of the carousel*/
-.custom-carousel {
-  width: 75%; /* Adjust the width as needed */
-  margin: auto; /* Center the carousel horizontally */
-}
-
 .vision_pc{
   padding-left: 140px !important; 
   padding-right: 140px !important;
@@ -165,3 +167,51 @@ section {
   padding-left: 140px !important; 
   padding-right: 140px !important;
 }
+
+.licenciatura_pc{
+  padding-top: 20px;
+  padding-left: 140px !important; 
+  padding-right: 140px !important;
+}
+
+.misiones_pc{ /*para los versos de misiones*/
+  padding-top: 20px;
+  padding-left: 140px !important; 
+  padding-right: 140px !important;
+}
+
+.misiones_mobile{ /*para los versos de misiones en movil*/
+  padding-top: 20px;
+  padding-left: 10px !important; 
+  padding-right: 10px !important;
+
+}
+
+.header_text{
+  text-align: center; 
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 80px;
+
+}
+
+.header_text_mobile{
+  text-align: center; 
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 35px;
+
+}
+
+.body_text{
+  font-size: 28px;
+}
+
+.body_text_mobile{
+  font-size: 23px;
+}
+
+/*
+1:make class like above body_text and mobile version for quotes all over the page, then fix layout and spacing in the misiones section for mobile.
+2:add the icons and links for the donation spot
+3:add the social media for unirse section*/
