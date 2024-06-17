@@ -211,7 +211,17 @@ section {
   font-size: 23px;
 }
 
+.body_quote{
+  font-size: 23px;
+  text-align: center;
+}
+
+.body_quote_mobile{
+  font-size: 20px;
+  text-align: center;
+}
+
+
 /*
-1:make class like above body_text and mobile version for quotes all over the page, then fix layout and spacing in the misiones section for mobile.
-2:add the icons and links for the donation spot
-3:add the social media for unirse section*/
+3:add the icons and links for the donation spot
+4:add the social media for unirse section*/

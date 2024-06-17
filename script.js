@@ -23,6 +23,9 @@ function adjust_carousel() {
   var vision_container = document.querySelector("#vision_container");
   var licen_container = document.querySelector("#licen_container");
   var body_text = document.querySelectorAll(".body_text");
+  var body_quote = document.querySelectorAll(".body_quote");
+
+
 
   //selects all tags whose id is we1
   var elements = document.querySelectorAll('[id="we1"]');/*   bad i know :/   */
@@ -40,6 +43,8 @@ function adjust_carousel() {
 
     elementsgg.forEach(function(element) {
       element.classList.remove("mt-5"); // set the widht of the element to 50% of the viewport height
+      element.classList.remove("mb-5"); // set the widht of the element to 50% of the viewport height
+      element.classList.add("mb-2"); // set the widht of the element to 50% of the viewport height
     });
 
     identidad_pc.classList.remove("identidad_pc");
@@ -92,6 +97,12 @@ function adjust_carousel() {
       element.classList.add("body_text_mobile");
     });
 
+    body_quote.forEach(function(element){
+      element.classList.remove("body_quote");
+      element.classList.add("body_quote_mobile");
+    });
+
+    rearrange_mission();
   }
 
 }
@@ -147,3 +158,25 @@ form.addEventListener("submit", (e) => {//when the event submit is triggered, th
 
   form.reset();
 });
+
+
+function rearrange_mission(){
+
+  var carousel = document.getElementById("carouselExampleCaptions");
+  var carousel3 = document.getElementById("carouselExampleCaptions3");
+
+  var car1_text_col = document.querySelector("#car1-text-col");
+  var car1_col = document.querySelector("#car1-col");
+  var car1_text = document.querySelector("#car1-text");
+  var car3_text_col = document.querySelector("#car3-text-col");
+  var car3_col = document.querySelector("#car3-col");
+  var car3_text = document.querySelector("#car3-text");
+
+  car1_col.appendChild(car1_text);
+  car1_text_col.appendChild(carousel);
+
+  car3_col.appendChild(car3_text);
+  car3_text_col.appendChild(carousel3);
+
+
+}
