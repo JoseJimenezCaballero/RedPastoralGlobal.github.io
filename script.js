@@ -24,6 +24,11 @@ function adjust_carousel() {
   var licen_container = document.querySelector("#licen_container");
   var body_text = document.querySelectorAll(".body_text");
   var body_quote = document.querySelectorAll(".body_quote");
+  var aportar_icons = document.querySelectorAll(".aportar_size");
+  var paypal_icon = document.getElementById("paypal");
+  var zelle_icon = document.getElementById("zelle");
+  var cashapp_icon = document.getElementById("cashapp");
+  var card2 = document.getElementById("card2");
 
 
 
@@ -102,7 +107,23 @@ function adjust_carousel() {
       element.classList.add("body_quote_mobile");
     });
 
-    rearrange_mission();
+
+    aportar_icons.forEach(function(element){
+      element.classList.remove("aportar_size");
+      element.classList.add("aportar_size_mobile");
+    });
+
+    paypal_icon.style.width = "45px";
+    zelle_icon.style.width = "100px";
+    cashapp_icon.style.width = "58px";
+    cashapp_icon.style.marginLeft = "20px";
+
+    card2.classList.remove('overlayy');
+    card2.classList.add('overlayy_mobile');
+
+
+
+    rearrange_mission();//call funct to re-arrange the missions layout in mobile, it will have carousel in the top and text at the bottom for each
   }
 
 }
@@ -159,7 +180,7 @@ form.addEventListener("submit", (e) => {//when the event submit is triggered, th
   form.reset();
 });
 
-
+//function used to rearrnge the layout of misions in mobile. It essentially gets the columns for both the col with the carousel, and the one with the text and then swaps them
 function rearrange_mission(){
 
   var carousel = document.getElementById("carouselExampleCaptions");
@@ -172,10 +193,10 @@ function rearrange_mission(){
   var car3_col = document.querySelector("#car3-col");
   var car3_text = document.querySelector("#car3-text");
 
-  car1_col.appendChild(car1_text);
+  car1_col.appendChild(car1_text);//swap the divs around
   car1_text_col.appendChild(carousel);
 
-  car3_col.appendChild(car3_text);
+  car3_col.appendChild(car3_text);//same
   car3_text_col.appendChild(carousel3);
 
 

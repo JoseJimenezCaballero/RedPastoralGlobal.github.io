@@ -221,7 +221,33 @@ section {
   text-align: center;
 }
 
+.aportar_size{
+  width: 160px;
+}
+
+.aportar_size_mobile{
+  width: 100px;
+}
+
+.overlayy {
+  background-image: url('assets/Card2.jpg');
+  background-size: cover;
+  background-position: bottom right; /* Centered by default */
+  width: 60%;
+  height: 370px;
+  border-radius: 10px;
+}
+
+.overlayy_mobile {
+  background-image: url('assets/Card2.jpg');
+  background-size: cover;
+  background-position: bottom right; /* Centered by default */
+  width: 90%;
+  height: 370px;
+  border-radius: 10px;
+}
+
 
 /*
-3:add the icons and links for the donation spot
-4:add the social media for unirse section*/
+5:make navbar dissapear after a button has been pressed
+*/
