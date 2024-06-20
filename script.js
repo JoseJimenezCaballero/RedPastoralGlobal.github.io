@@ -1,6 +1,23 @@
 
 window.onload = adjust_carousel();
 
+
+//function will listen for a click on each of the elements in the navbar and when clicked will use the bootstrap api to set the collapse to false and hide the navbar 
+document.addEventListener('DOMContentLoaded', function () {
+  var navbarCollapse = document.getElementById('navbarNavAltMarkup');
+  var navbarLinks = navbarCollapse.querySelectorAll('.nav-link');
+
+  navbarLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    });
+  });
+});
+
+
 //fucntion to adjust carousel when on mobile
 function adjust_carousel() {
 
