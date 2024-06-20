@@ -158,7 +158,7 @@ const ministerio_input = document.getElementById("ministerio");
 
 
 
-//funct used to send email with users entered information
+//funct used to send email with users entered information. Api is from smtpJS.com, service used is from elasticemail.com
 function send_email() {
   //body that will be sent to email:
   const body_message =
@@ -171,9 +171,9 @@ function send_email() {
     `;//need <br> tags bc email will be sent as a single string
 
   Email.send({
-    SecureToken: "20c837e3-04ea-4777-8d9e-a7f0060e325c",
+    SecureToken: "cd030360-e1f6-4723-b545-b5af9ba451dd",
     To: 'redpastoralglobal@gmail.com',
-    From: "middle.machine.99@gmail.com",
+    From: "redpastoralglobal@gmail.com",
     Subject: "Nuevo Inscripcion Para el Ministerio",
     Body: body_message
   }).then(
