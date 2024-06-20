@@ -166,7 +166,7 @@ function send_email() {
     Nombre: ${name_input.value}<br>
     Apellido: ${apellido_input.value}<br>
     País: ${pais_input.value}<br>
-    Dirección: ${direccion_input.value}<br>
+    E-mail: ${direccion_input.value}<br>
     Ministerio: ${ministerio_input.value}<br>
     `;//need <br> tags bc email will be sent as a single string
 
